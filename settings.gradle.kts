@@ -15,5 +15,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "MultiModuleNav"
 include(":app")
-include(":book-datasource")
-include(":book-list")
+include(":di")
+include(":data")
+include(":presentation")
+include(":domain")
