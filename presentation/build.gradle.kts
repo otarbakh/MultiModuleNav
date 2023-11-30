@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    ksp {
+        arg("compose-destinations.mode", "destinations")
+        arg("compose-destinations.moduleName", ":presentation")
+    }
 }
 
 dependencies {
@@ -44,6 +48,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation ("androidx.activity:activity-compose:1.8.1")
 
     //Dagger - Hilt
     implementation ("com.google.dagger:hilt-android:2.45")
@@ -61,4 +66,8 @@ dependencies {
 
     implementation("io.github.raamcosta.compose-destinations:core:1.8.42-beta")
     ksp("io.github.raamcosta.compose-destinations:ksp:1.8.42-beta")
+
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation ("androidx.activity:activity-compose:1.8.1")
 }

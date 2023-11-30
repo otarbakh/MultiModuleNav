@@ -14,7 +14,7 @@
         android:theme="@style/Theme.MultiModuleNav"
         tools:targetApi="31">
         <activity
-            android:name="com.example.presentation.MainActivity"
+            android:name="com.example.presentation.com.example.multimodulenav.ui.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MultiModuleNav">

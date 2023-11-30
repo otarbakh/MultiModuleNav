@@ -51,6 +51,10 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    ksp {
+        arg("compose-destinations.mode", "navgraphs")
+        arg("compose-destinations.moduleName", ":app")
+    }
 
 }
 
